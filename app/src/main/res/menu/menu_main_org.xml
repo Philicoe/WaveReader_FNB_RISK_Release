@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+    <item android:id="@+id/menu_refresh"
+        android:showAsAction="always"
+        android:title="@string/refresh" />
+    <item android:id="@+id/menu_exit"
+        android:showAsAction="never"
+        android:title="@string/memu_exit" />
+    <item android:id="@+id/menu_toggle_getData"
+        android:showAsAction="never"
+        android:title="@string/menu_dont_getDataAPDU" />
+    <item android:id="@+id/menu_toggle_log"
+        android:showAsAction="never"
+        android:title="@string/sample_show_log" />
+
+</menu>

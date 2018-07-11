@@ -1,0 +1,85 @@
+<!--
+Copyright (C) 2013 The Android Open Source Project
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="380dp"
+    android:layout_height="242.25dp"
+    android:layout_gravity="center"
+    android:layout_margin="20dp">
+
+
+
+    <ImageView
+        android:id="@+id/active_card_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/card_background_limits"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:weightSum="1">
+
+
+        <TextView
+            android:id="@+id/card_account_field"
+            android:width="360dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:textSize="32dp"
+            android:singleLine="true"
+            android:textAllCaps="true"
+            android:textColor="@color/plain_white"
+            android:layout_marginTop="5dp" />
+
+        <ScrollView
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/card_ballance_field"
+                android:width="360dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/AOSA"
+                android:singleLine="false"
+                android:maxLines = "25"
+                android:scrollbars="horizontal|vertical"
+                android:scrollbarStyle="outsideOverlay"
+                android:scrollHorizontally="false"
+                android:layout_weight="0.78"
+                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:scrollbarThumbHorizontal="@android:drawable/title_bar_tall"
+                android:scrollbarThumbVertical="@android:drawable/title_bar_tall"
+                android:scrollbarTrackHorizontal="@android:drawable/title_bar_tall"
+                android:scrollbarTrackVertical="@android:drawable/title_bar_tall"
+                android:textColor="@color/plain_white"/>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</FrameLayout>
