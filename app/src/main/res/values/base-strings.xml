@@ -20,8 +20,9 @@
 
     <string name="intro_message">
         <![CDATA[
-        - App attempts to read FNB CLS card\'s Limits.\n
-        - TAG 9F68 - CAP.\n 
+        App attempts to read Visa Contactless cards.\n
+        Card Limits descriptions below:\n
+        - TAG 9F68 - CAP.\n
         - TAG 9F6C - CTQ.\n
         - TAG 9F79 - VLP Available Funds.\n
         - TAG 9F78 - VLP Single Trans AMT.\n
